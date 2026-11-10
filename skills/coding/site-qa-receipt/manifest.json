@@ -1,7 +1,7 @@
 {
   "id": "coding/site-qa-receipt",
   "name": "site-qa-receipt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "domain": "coding",
   "summary": "A contracted browser check of one page with verifiable evidence, judged by another vendor and signed by the Starlight Kernel.",
   "inputs": [

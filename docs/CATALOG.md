@@ -82,7 +82,7 @@ _12 skills_
 | Skill | Version | Description |
 |---|---|---|
 | [`cosmic-code-lab`](../skills/coding/cosmic-code-lab) | 0.1.0 | Generate a runnable, space-themed coding lab — a problem statement, starter code, hidden tests, and a worked solution — in Python or JavaScript. Use when cre... |
-| [`site-qa-receipt`](../skills/coding/site-qa-receipt) | 0.1.0 | Check a live web page the way a stranger would and keep evidence another party can verify, then hand it to the Starlight Kernel to be judged by a different v... |
+| [`site-qa-receipt`](../skills/coding/site-qa-receipt) | 0.2.0 | Check a live web page the way a stranger would and keep evidence another party can verify, then hand it to the Starlight Kernel to be judged by a different v... |
 | [`starlight-autoplan`](../skills/coding/starlight-autoplan) | 0.1.0 | Review a non-trivial implementation plan through product, engineering, design, and developer-experience lenses, then reconcile the findings into an evidence-... |
 | [`starlight-ceo-review`](../skills/coding/starlight-ceo-review) | 0.1.0 | Review a proposal from the accountable founder or product-owner perspective: user value, strategic fit, economics, evidence, sequencing, and human responsibi... |
 | [`starlight-design-review`](../skills/coding/starlight-design-review) | 0.1.0 | Audit a digital experience against its own design language, information hierarchy, accessibility, responsive behavior, interaction states, content truth, and... |
