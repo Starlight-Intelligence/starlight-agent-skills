@@ -1,0 +1,22 @@
+{
+  "url": "https://starlightintelligence.ai/",
+  "viewports": ["1440x900", "390x844"],
+  "assertions": [
+    "page returns 200",
+    "hero heading is visible",
+    "mission studio door is visible",
+    "hosted execution is labelled as in development",
+    "no uncaught page errors",
+    "no console errors",
+    "no dead doors"
+  ],
+  "checks": [
+    { "name": "page returns 200", "kind": "status", "equals": 200 },
+    { "name": "hero heading is visible", "kind": "selector", "selector": "h1" },
+    { "name": "mission studio door is visible", "kind": "text", "text": "Open the mission studio" },
+    { "name": "hosted execution is labelled as in development", "kind": "text", "text": "Hosted execution is in development" },
+    { "name": "no uncaught page errors", "kind": "page-errors" },
+    { "name": "no console errors", "kind": "console-errors" },
+    { "name": "no dead doors", "kind": "doors", "selector": "a[href]", "max": 40 }
+  ]
+}

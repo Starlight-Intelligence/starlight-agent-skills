@@ -1,0 +1,13 @@
+{
+  "allowedHosts": [
+    "starlightintelligence.ai"
+  ],
+  "refusedPaths": [
+    "checkout",
+    "billing",
+    "payment",
+    "stripe",
+    "paypal",
+    "/pay"
+  ]
+}

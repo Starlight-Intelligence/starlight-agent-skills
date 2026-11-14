@@ -12,6 +12,9 @@ changelog heading is not, by itself, proof of a tag or GitHub release.
 ## [Unreleased]
 
 ### Added
+- `coding/site-qa-receipt` 0.2.0 — a Chrome DevTools Protocol driver and a Starlight Kernel
+  bridge under `references/driver/`, with eight tests against a real Chromium. First live run:
+  one check of starlightintelligence.ai, signed by the Kernel and verified with the exported key.
 - `substrate/capability-foundry` — outcome-based portable skill, agent-instruction
   and plugin authoring through the Starlight registry, compiler and MCP tools,
   with startup learning examples and explicit export, host-test and publication states.

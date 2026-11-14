@@ -1,7 +1,7 @@
 ---
 name: site-qa-receipt
 description: "Check a live web page the way a stranger would and keep evidence another party can verify, then hand it to the Starlight Kernel to be judged by a different vendor and signed. Use when asked to QA, verify or prove a page after a deploy, check a site on desktop and mobile, or produce a browser receipt. Not for writing UI code or reading a page's text."
-metadata: {"version":"0.1.0","domain":"coding","tags":"qa,browser,receipt,verification,deploy,evidence"}
+metadata: {"version":"0.2.0","domain":"coding","tags":"qa,browser,receipt,verification,deploy,evidence"}
 ---
 
 # Site QA Receipt
@@ -47,9 +47,15 @@ and the result is signed as a `starlight.receipt.v1`.
 5. **Collect console errors and the network log.** Record method, URL, status and timing. Strip
    cookies, `authorization` and `set-cookie`; keep only origin and path of every URL.
 6. **Evaluate every contracted assertion.** A contracted assertion with no result fails the run.
-7. **Get it judged and signed.** A grader from a different vendor than the agent that ran the
-   check returns accept or reject. Issue the receipt through the Kernel adapter; until it ships,
-   report the evidence folder and verdict and say the receipt is pending.
+7. **Get it judged and signed.** The Kernel's scripted verdict covers every check a script can
+   decide; for anything it cannot, a grader from a different vendor than the agent that ran the
+   check returns accept or reject. Issue the receipt through the Kernel adapter and verify it
+   with the exported public key before reporting it. Without a Kernel checkout, report the
+   evidence folder and verdict and say the receipt is pending.
+
+Steps 1 and 3 to 6 are scripted in [`references/driver/`](references/driver/README.md): one
+command drives a real Chromium over the Chrome DevTools Protocol and writes the session, a
+second hands it to the Kernel. Use it instead of improvising the browser steps.
 
 ## Output contract
 
@@ -67,8 +73,10 @@ and the result is signed as a `starlight.receipt.v1`.
 
 ## Tools & MCP
 
-- Tools: `Bash` (the `browse` CLI, hashing), `Read`, `Write`.
-- MCP dependencies: optional `browseros-neo` for logged-in checks; the Starlight Kernel for signing.
+- Tools: `Bash` (the driver in `references/driver/`, or the `browse` CLI), `Read`, `Write`.
+- The driver needs Node 22 or later and Playwright with its Chromium; signing needs a
+  Starlight Kernel checkout.
+- MCP dependencies: optional `browseros-neo` for logged-in checks.
 
 ## Quality bar
 
