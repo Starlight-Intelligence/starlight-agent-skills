@@ -84,7 +84,12 @@ if len(source["localNonReleaseTags"]) != 4:
     fail("exactly four local-only recovery/archive tags are expected")
 actual_tags = set(git("tag", "--list").splitlines())
 local_receipts = set(source["localNonReleaseTags"])
-if actual_tags not in (set(), local_receipts):
+# Preserve the dated audit while verifying later non-release refs at their exact object.
+observed = ledger["observedNonReleaseRefs"]
+for name in actual_tags.intersection(observed):
+    if not re.fullmatch(r"idea/pr-[1-9][0-9]*", name) or git("rev-parse", f"refs/tags/{name}") != observed[name]:
+        fail(f"non-release reference moved or has an invalid name: {name}")
+if actual_tags.difference(observed) not in (set(), local_receipts):
     fail("checkout tags must be either the empty remote topology or all four local receipts")
 
 try:

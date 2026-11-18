@@ -18,6 +18,8 @@ Translate governed canon into emotionally coherent interactive and cross-media e
 
 ## Inputs
 
+For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
+
 - Product manifest, exact canon authority revision, conflict/migration ledger and World and Experience Studio task envelope.
 - Audience journey, experience brief, platform targets, rights record, asset registry, design pack, budget and target channels.
 
