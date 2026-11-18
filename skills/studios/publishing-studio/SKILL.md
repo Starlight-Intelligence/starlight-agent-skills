@@ -18,13 +18,13 @@ Produce one canonical, source-traceable publication that can compile into severa
 
 ## Inputs
 
+For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
+
 - Product manifest and exact source repository revision.
 - Publishing Studio task envelope with buyer job, deliverables, token ceiling, deadline, target channels, acceptance and stop conditions.
 - Source inventory, claim/citation map, rights record, design-contract revision, commercial state and previous release receipt.
 
 ## Workflow
-
-For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
 
 1. Resolve the canonical product, brand, repository, Publishing Studio pack and requested channel adapters from the reviewed Empire Registry. Stop on unresolved authority or conflicting sources.
 2. Bind the task envelope. Preserve at least 25% of its token ceiling for verification and stop after three production/review rounds.

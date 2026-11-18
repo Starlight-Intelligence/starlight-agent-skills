@@ -9,11 +9,8 @@ never silently authorizes another.
 - `CHANGELOG.md` is the curated library history.
 - `docs/releases/release-ledger.json` is the machine-readable release state.
 - `docs/releases/v0.1.0.md` is a draft historical candidate.
-- The August audit found zero remote tags. On 18 November 2026 the remote
-  preserved [closed PR 39](https://github.com/Starlight-Intelligence/starlight-agent-skills/pull/39)
-  at `idea/pr-39`, commit `441b05ce0990b7c381789bafe10fb6e5a643aecf`.
-  The release validator checks that exact non-release reference when present.
-  The four local recovery and archive receipts retain their historical scope.
+- The August audit found zero remote tags. The November checkout includes the exact non-release ref `idea/pr-39`, pinned in `observedNonReleaseRefs`. The validator checks its object and continues to reject unexpected tags. Four local-only `asph-wip-*` and
+  `archive/*` tags are recovery receipts, not releases.
 - The existing attestation's `v0.1.0` wording described intended identity, not
   a published GitHub release; the append-only correction records that fact.
 - Eight commits after the `v0.1.0` boundary are queued for `v0.2.0`.
