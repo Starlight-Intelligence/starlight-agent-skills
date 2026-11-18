@@ -128,8 +128,6 @@ A curated, production-grade skill library. Eight domains under `skills/`: `subst
 It is a **library, not an application**. It ships no runtime. Consuming repos install skills from here; nothing
 here imports from them.
 
-For customer-facing interfaces, editorial or media, read the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. The product and its brand stewards retain authority over assets and release.
-
 ## The one rule
 
 **The format is the product.** A skill that does not pass the validator is not a skill — it is a draft. The
@@ -194,3 +192,7 @@ Work on `agent/<harness>/<scope>` or the branch you were assigned. Open a **draf
 marking ready. Never push directly to `main`.
 
 Built on SIP.
+
+## Portfolio experience review
+
+For portfolio screens, editorial, media and release reviews, resolve the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md). Record the revision with the owning product, brand pack, primary task and evidence location. Preserve skill-specific execution and publication authority.

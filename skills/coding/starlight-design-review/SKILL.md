@@ -23,6 +23,10 @@ Judge whether the experience communicates the right thing, in the right order, w
 - Live preview or runnable surface and supported breakpoints.
 - Content, asset provenance, accessibility, and performance constraints.
 
+## Portfolio experience review
+
+Load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) and its sibling review contract at the same revision. Record one actual task result and the changed state visible in the mobile and desktop evidence.
+
 ## Workflow
 
 1. Verify the primary task and content hierarchy before judging decoration.

@@ -84,8 +84,16 @@ if len(source["localNonReleaseTags"]) != 4:
     fail("exactly four local-only recovery/archive tags are expected")
 actual_tags = set(git("tag", "--list").splitlines())
 local_receipts = set(source["localNonReleaseTags"])
+# The August audit describes the historical boundary. The remote later
+# retained the head of closed PR 39 as a lightweight idea tag. Accept exactly
+# those bytes in full-history CI while preserving the existing recovery checks.
+idea_tag = "idea/pr-39"
+if idea_tag in actual_tags:
+    if git("rev-parse", f"refs/tags/{idea_tag}") != "441b05ce0990b7c381789bafe10fb6e5a643aecf":
+        fail("idea/pr-39 differs from its recorded review commit")
+    actual_tags.remove(idea_tag)
 if actual_tags not in (set(), local_receipts):
-    fail("checkout tags must be either the empty remote topology or all four local receipts")
+    fail("checkout has an unrecorded tag or incomplete recovery receipts")
 
 try:
     git("cat-file", "-e", f"{release['targetSha']}^{{commit}}")

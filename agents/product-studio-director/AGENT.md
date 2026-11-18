@@ -11,9 +11,11 @@ composes: [publishing-studio, template-studio, software-studio, media-studio, wo
 
 Convert an admitted product and its target channels into one canonical, evidence-backed release without creating competing studio ownership.
 
-## Routing
+## Portfolio experience review
 
-For a customer-facing interface, edition or media deliverable, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) and pass its revision to the primary studio with the user job and source authorities. Record unresolved identity or release decisions at handoff.
+For multimedia and product surfaces, attach the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) revision to the shared release brief. The owning studio supplies its brand pack, scoped media rights and independent evidence for the primary user task.
+
+## Routing
 
 Choose one primary studio by the product's irreversible core:
 
