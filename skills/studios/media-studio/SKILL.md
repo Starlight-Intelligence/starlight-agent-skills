@@ -24,6 +24,8 @@ Create distinctive media with durable editable masters, controlled generation sp
 
 ## Workflow
 
+For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
+
 1. Resolve the product, Media Studio pack, media policy, design authority and channel adapters. Distinguish canon, references, generated layers, factual UI/text and approved owned assets.
 2. Bind emotional premise, audience effect, medium, constraints, exclusions, token budget and external credit/cash ceiling. Do not spend without an explicit envelope.
 3. Assign creative direction, production, continuity, rights and independent technical verification to distinct owners.

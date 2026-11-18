@@ -24,6 +24,8 @@ Create one excellent editable template system, then compile channel-native packa
 
 ## Workflow
 
+For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
+
 1. Resolve the product, repository, Template Studio pack, design authority and requested channel adapters from reviewed Registry state.
 2. Bind one task envelope and one canonical editable source. Reject marketplace-first forks and private/customer data in template sources.
 3. Define the buyer's starting state, completed result, installation or duplication path, editable zones, protected invariants and upgrade policy.

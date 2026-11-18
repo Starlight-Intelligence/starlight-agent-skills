@@ -23,6 +23,8 @@ Translate governed canon into emotionally coherent interactive and cross-media e
 
 ## Workflow
 
+For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
+
 1. Resolve artifact class, canonical world repository, product repository, Studio pack and channel adapters. Keyword or thematic similarity never grants canon ownership.
 2. Classify proposed material as canonical, proposed, variant, historical, superseded, licensed or non-canonical. Preserve valuable contradictions in a migration ledger rather than deleting them silently.
 3. Bind the emotional journey, interaction loop, medium responsibilities, accessibility/performance budgets, state/save/version model and release stop conditions.
