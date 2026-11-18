@@ -30,6 +30,10 @@ and the result is signed as a `starlight.receipt.v1`.
 | `allowed_hosts` | yes | Hosts the check may visit. |
 | `viewports` | no | Default `1440x900` and `390x844`. |
 
+## Portfolio experience review
+
+For portfolio experience verification, derive assertions from the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) and record its revision in the existing evidence bundle. Report the actual device, route, candidate revision and task result.
+
 ## Workflow
 
 1. **Guard before the browser moves.** If the target's path contains checkout, billing,

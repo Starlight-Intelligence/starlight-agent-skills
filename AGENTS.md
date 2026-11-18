@@ -192,3 +192,7 @@ Work on `agent/<harness>/<scope>` or the branch you were assigned. Open a **draf
 marking ready. Never push directly to `main`.
 
 Built on SIP.
+
+## Portfolio experience review
+
+For portfolio screens, editorial, media and release reviews, resolve the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md). Record the revision with the owning product, brand pack, primary task and evidence location. Preserve skill-specific execution and publication authority.
