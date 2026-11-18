@@ -51,5 +51,8 @@ jobs:
       - name: Validate Codex plugin package
         run: python3 scripts/validate_plugin.py
 
+      - name: Exercise visual identity preflight
+        run: node --test skills/brand/visual-identity-preflight/tests/preflight.test.mjs
+
       - name: Validate release truth
         run: python3 scripts/validate_release.py

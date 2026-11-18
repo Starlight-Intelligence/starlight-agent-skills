@@ -9,7 +9,7 @@ never silently authorizes another.
 - `CHANGELOG.md` is the curated library history.
 - `docs/releases/release-ledger.json` is the machine-readable release state.
 - `docs/releases/v0.1.0.md` is a draft historical candidate.
-- No remote tag or GitHub release exists. Four local-only `asph-wip-*` and
+- The August audit found zero remote tags. The November checkout includes the exact non-release ref `idea/pr-39`, pinned in `observedNonReleaseRefs`. The validator checks its object and continues to reject unexpected tags. Four local-only `asph-wip-*` and
   `archive/*` tags are recovery receipts, not releases.
 - The existing attestation's `v0.1.0` wording described intended identity, not
   a published GitHub release; the append-only correction records that fact.
