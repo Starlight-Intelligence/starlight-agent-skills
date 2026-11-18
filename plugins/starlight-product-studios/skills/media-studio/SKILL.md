@@ -24,6 +24,8 @@ Create distinctive media with durable editable masters, controlled generation sp
 
 ## Workflow
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision. The standalone studio plugin bundles the instructions and shell bridge under `product-studio-director/references/identity/`.
+
 1. Resolve the product, Media Studio pack, media policy, design authority and channel adapters. Distinguish canon, references, generated layers, factual UI/text and approved owned assets.
 2. Bind emotional premise, audience effect, medium, constraints, exclusions, token budget and external credit/cash ceiling. Do not spend without an explicit envelope.
 3. Assign creative direction, production, continuity, rights and independent technical verification to distinct owners.

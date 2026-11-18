@@ -104,6 +104,8 @@ and it is never able to overrule a gate. Anything irreversible goes to Frank.
 
 # Starlight Agent Skills — cross-harness agent contract
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision. See [the runtime contract](skills/brand/visual-identity-preflight/SKILL.md).
+
 > The portable agent card. Same contract in Claude Code, Codex, Cursor, Gemini CLI, or OpenCode.
 > Per-runtime detail lives in `adapters/`. This file is the SIP § 1 file-contract artifact for this repo.
 

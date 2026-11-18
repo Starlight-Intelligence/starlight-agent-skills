@@ -6,6 +6,7 @@
       "source": "frankxai/starlight-agent-skills",
       "skills": [
         "starlight-voice",
+        "visual-identity-preflight",
         "cosmic-code-lab",
         "apod-to-short",
         "arxiv-space-paper-to-brief",

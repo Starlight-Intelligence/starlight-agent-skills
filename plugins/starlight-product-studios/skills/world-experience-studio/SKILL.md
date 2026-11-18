@@ -23,6 +23,8 @@ Translate governed canon into emotionally coherent interactive and cross-media e
 
 ## Workflow
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision. The standalone studio plugin bundles the instructions and shell bridge under `product-studio-director/references/identity/`.
+
 1. Resolve artifact class, canonical world repository, product repository, Studio pack and channel adapters. Keyword or thematic similarity never grants canon ownership.
 2. Classify proposed material as canonical, proposed, variant, historical, superseded, licensed or non-canonical. Preserve valuable contradictions in a migration ledger rather than deleting them silently.
 3. Bind the emotional journey, interaction loop, medium responsibilities, accessibility/performance budgets, state/save/version model and release stop conditions.

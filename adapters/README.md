@@ -17,3 +17,7 @@ clean and DRY.
 Universal bridge: every runtime supports **MCP**. Any skill whose `manifest.json`
 declares `mcp_dependencies` can be driven through an MCP server for maximum
 portability.
+
+## Owned visual identities
+
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision. [Runtime contract and shell fallback](../skills/brand/visual-identity-preflight/SKILL.md).

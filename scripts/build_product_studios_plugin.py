@@ -39,6 +39,11 @@ def expected_files() -> dict[Path, bytes]:
                 relative = Path("skills") / studio / path.relative_to(source)
                 files[relative] = path.read_bytes()
 
+    # Keep the standalone studio plugin usable without a second skills checkout.
+    bridge = ROOT / "skills" / "brand" / "visual-identity-preflight"
+    for filename in ("SKILL.md", "preflight.mjs"):
+        files[Path("skills/product-studio-director/references/identity") / filename] = (bridge / filename).read_bytes()
+
     agent_path = ROOT / "agents" / "product-studio-director" / "AGENT.md"
     agent_text = agent_path.read_text(encoding="utf-8")
     parts = agent_text.split("---", 2)
