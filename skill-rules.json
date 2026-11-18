@@ -4,6 +4,25 @@
   "_attestation": "Built on SIP \u2014 starlightintelligence.org/protocol v1.1.0",
   "activation_rules": [
     {
+      "skill": "visual-identity-preflight",
+      "triggers": {
+        "keywords": [
+          "owned logo",
+          "brand logo",
+          "canonical identity",
+          "character folio",
+          "character likeness",
+          "newsletter masthead",
+          "approved visual"
+        ],
+        "file_patterns": [],
+        "commands": [
+          "/visual-identity-preflight"
+        ]
+      },
+      "priority": "high"
+    },
+    {
       "skill": "apod-to-short",
       "triggers": {
         "keywords": [

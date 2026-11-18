@@ -32,6 +32,8 @@ creator can pick and generate quickly.
 
 ## Workflow
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision.
+
 1. **Find the visual hook** — the single image idea that conveys the promise. ✅ Check: readable at small size.
 2. **Per concept:** layout (subject placement, rule-of-thirds), overlay text
    (≤4 words, high contrast), color/contrast logic, and emotional read.

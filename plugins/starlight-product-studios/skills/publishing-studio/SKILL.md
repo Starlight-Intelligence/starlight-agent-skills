@@ -24,6 +24,8 @@ Produce one canonical, source-traceable publication that can compile into severa
 
 ## Workflow
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision. The standalone studio plugin bundles the instructions and shell bridge under `product-studio-director/references/identity/`.
+
 1. Resolve the canonical product, brand, repository, Publishing Studio pack and requested channel adapters from the reviewed Empire Registry. Stop on unresolved authority or conflicting sources.
 2. Bind the task envelope. Preserve at least 25% of its token ceiling for verification and stop after three production/review rounds.
 3. Build a source map separating primary evidence, interpretation, original contribution, fiction, quotations, licensed material and unresolved claims.

@@ -24,6 +24,8 @@ Turn a product claim into a bounded, secure, observable and maintainable softwar
 
 ## Workflow
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision. The standalone studio plugin bundles the instructions and shell bridge under `product-studio-director/references/identity/`.
+
 1. Resolve the canonical product repository, Software Studio pack, architecture decisions and channel adapters. Do not create another platform, service or repository from naming convenience.
 2. Define the measurable user job, critical path, non-goals, interfaces, state, failure behavior, security boundary, telemetry and release evidence before implementation.
 3. Assign product architecture, implementation, security/reliability review, product-quality review and exact-revision verification to non-overlapping owners.

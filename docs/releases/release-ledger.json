@@ -19,6 +19,9 @@
     ],
     "tagBoundaryPolicy": "The four recovery/archive tags exist only in the audited local checkout. The canonical GitHub remote has zero tags."
   },
+  "observedNonReleaseRefs": {
+    "idea/pr-39": "441b05ce0990b7c381789bafe10fb6e5a643aecf"
+  },
   "release": {
     "version": "0.1.0",
     "tag": "v0.1.0",

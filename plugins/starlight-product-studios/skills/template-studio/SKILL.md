@@ -24,6 +24,8 @@ Create one excellent editable template system, then compile channel-native packa
 
 ## Workflow
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision. The standalone studio plugin bundles the instructions and shell bridge under `product-studio-director/references/identity/`.
+
 1. Resolve the product, repository, Template Studio pack, design authority and requested channel adapters from reviewed Registry state.
 2. Bind one task envelope and one canonical editable source. Reject marketplace-first forks and private/customer data in template sources.
 3. Define the buyer's starting state, completed result, installation or duplication path, editable zones, protected invariants and upgrade policy.

@@ -1,6 +1,6 @@
 # 🛰️ Starlight Agent Skills — Catalog
 
-The complete index of all **44 skills** in this library. Every skill ships as a self-contained, rich-portable package: a canonical `SKILL.md` (spec-compliant frontmatter), an optional `manifest.json`, and optional `examples/` + `tests/`. Skills run across Claude Code, Codex, Cursor, Gemini, OpenCode, and the Starlight Intelligence System — see [`adapters/`](../adapters/).
+The complete index of all **45 skills** in this library. Every skill ships as a self-contained, rich-portable package: a canonical `SKILL.md` (spec-compliant frontmatter), an optional `manifest.json`, and optional `examples/` + `tests/`. Skills run across Claude Code, Codex, Cursor, Gemini, OpenCode, and the Starlight Intelligence System — see [`adapters/`](../adapters/).
 
 > This file is generated. After adding or renaming a skill, run `python3 scripts/generate_catalog.py` to regenerate it, then `python3 scripts/validate_skills.py` to verify compliance.
 
@@ -96,10 +96,11 @@ _12 skills_
 
 ## ✨ Brand & Voice
 
-_3 skills_
+_4 skills_
 
 | Skill | Version | Description |
 |---|---|---|
 | [`arcanea-mythic-overlay`](../skills/brand/arcanea-mythic-overlay) | 0.1.0 | Add an Arcanea mythic overlay to factual content — a canon-attributed narrative framing (Guardian/Luminor names, mythic register) layered over the real facts... |
 | [`frankx-authority-post`](../skills/brand/frankx-authority-post) | 0.1.0 | Write a FrankX authority post — an AI-Architect-voiced LinkedIn/X post that leads with a result, teaches one concrete lesson, and stays humble. Use when draf... |
 | [`starlight-voice`](../skills/brand/starlight-voice) | 0.1.0 | Apply the Starlight voice to any text — cool, premium, high-intellect, direct, technical, warm, playful; pattern recognition as poetry. Use when writing or r... |
+| [`visual-identity-preflight`](../skills/brand/visual-identity-preflight) | 0.1.0 | Resolve an owned logo or character against VIS before image generation, editing, slide and newsletter export, or publication. Use for every placement that de... |

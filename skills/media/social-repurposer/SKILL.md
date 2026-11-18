@@ -32,6 +32,8 @@ norms (length, structure, CTA) while keeping the core message and facts consiste
 
 ## Workflow
 
+For every owned logo or named character, run the shared `visual-identity-preflight` skill before generating, editing, exporting or publishing. Require the exact scoped VIS receipt and bind it to the placement. A disconnected client or unresolved identity blocks that visual. Publication requires its own human decision.
+
 1. **Find the core** — the one message + the 3–5 supporting points worth carrying
    across channels. ✅ Check: message is true to the source.
 2. **X thread** — hook post + 3–6 beats + closing CTA. No fabricated stats.

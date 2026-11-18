@@ -1,0 +1,1 @@
+Exercise the actual shell adapter with `node --test skills/brand/visual-identity-preflight/tests/preflight.test.mjs`. A missing authority, a different shared-folio character, stale digest, and attempted publication must all stop before rendering.

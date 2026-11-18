@@ -1,0 +1,65 @@
+{
+  "id": "brand/visual-identity-preflight",
+  "name": "visual-identity-preflight",
+  "version": "0.1.0",
+  "domain": "brand",
+  "summary": "Resolve exact owned identities against VIS before rendering or export.",
+  "inputs": [
+    {
+      "name": "identity_id",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "variant",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "intended_use",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "channel",
+      "type": "string",
+      "required": true
+    },
+    {
+      "name": "required_approval",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "publish_authorized",
+      "type": "boolean"
+    }
+  ],
+  "tools": [
+    "Read",
+    "Bash"
+  ],
+  "mcp_dependencies": [],
+  "runtimes": [
+    "claude",
+    "codex",
+    "cursor",
+    "gemini",
+    "opencode",
+    "sis"
+  ],
+  "tags": [
+    "identity",
+    "logo",
+    "character",
+    "rights",
+    "folio"
+  ],
+  "attestation": "Built on SIP — starlightintelligence.org/protocol v1.1.0"
+}

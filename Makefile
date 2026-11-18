@@ -2,6 +2,7 @@
 
 # Run the full quality gate (what CI runs).
 check: validate validate-examples catalog-check rules plugin release-check
+	node --test skills/brand/visual-identity-preflight/tests/preflight.test.mjs
 
 # Frontmatter + attestation + manifest↔SKILL.md↔folder integrity.
 validate:
