@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "dimension": "installer-roundtrip",
+  "sourceRevision": "1e5577124c7c8ff48fceaf66037e0d5723cb41cf",
+  "observedAt": "2026-11-19T03:00:14.885966+00:00",
+  "installerVersion": "1.9.0",
+  "profileSha256": "75e357212e307841f6d111748158d412cb7b929f33d864a12ba4c86ebdc98876",
+  "results": [
+    {
+      "skill": "site-qa-receipt",
+      "target": "codex",
+      "fileCount": 10,
+      "entrypointSha256": "9996a222c2125af4a828b967fc273bb79637f86ee482b02f3e936a46036f0fdb",
+      "payload": "pass",
+      "scopedRemoval": "pass",
+      "projectClean": true,
+      "status": "pass"
+    },
+    {
+      "skill": "waitlist-door-check",
+      "target": "codex",
+      "fileCount": 4,
+      "entrypointSha256": "061a5c6a516d3dd541ac0e9f0dc6cf306eb422bc42910cfc9d4c6b0719be865c",
+      "payload": "pass",
+      "scopedRemoval": "pass",
+      "projectClean": true,
+      "status": "pass"
+    },
+    {
+      "skill": "site-qa-receipt",
+      "target": "claude-code",
+      "fileCount": 10,
+      "entrypointSha256": "9996a222c2125af4a828b967fc273bb79637f86ee482b02f3e936a46036f0fdb",
+      "payload": "pass",
+      "scopedRemoval": "pass",
+      "projectClean": true,
+      "status": "pass"
+    },
+    {
+      "skill": "waitlist-door-check",
+      "target": "claude-code",
+      "fileCount": 4,
+      "entrypointSha256": "061a5c6a516d3dd541ac0e9f0dc6cf306eb422bc42910cfc9d4c6b0719be865c",
+      "payload": "pass",
+      "scopedRemoval": "pass",
+      "projectClean": true,
+      "status": "pass"
+    }
+  ]
+}
