@@ -115,6 +115,22 @@ def main() -> None:
     if found != REQUIRED_SKILLS:
         fail(f"plugin skill set drift: expected {sorted(REQUIRED_SKILLS)}, found {sorted(found)}")
 
+    # These skills can also be ported individually, outside the compiled plugin.
+    # Each entry must independently reach the same immutable portfolio policy.
+    constitution = re.compile(
+        r"\[Frontier Experience Constitution\]\("
+        r"https://github\.com/Starlight-Intelligence/starlight-design-intelligence/blob/"
+        r"([0-9a-f]{40})/portfolio/frontier-experience-constitution\.md\)"
+    )
+    revisions = set()
+    for name in sorted(REQUIRED_SKILLS):
+        matches = constitution.findall((PLUGIN_ROOT / "skills" / name / "SKILL.md").read_text())
+        if len(matches) != 1:
+            fail(f"{name} must link exactly one immutable Frontier Experience Constitution")
+        revisions.add(matches[0])
+    if len(revisions) != 1:
+        fail("studio instruction pins disagree")
+
     subprocess.run(
         [sys.executable, str(ROOT / "scripts" / "build_product_studios_plugin.py"), "--check"],
         cwd=ROOT,

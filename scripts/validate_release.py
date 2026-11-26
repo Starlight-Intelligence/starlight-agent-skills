@@ -86,8 +86,11 @@ actual_tags = set(git("tag", "--list").splitlines())
 # The August ledger describes that audit date. The migrated repository also
 # carries a reviewed, non-release idea bookmark. Check its object exactly.
 idea_tag = "idea/pr-39"
+idea_sha = "441b05ce0990b7c381789bafe10fb6e5a643aecf"
+if ledger.get("observedNonReleaseRefs") != {idea_tag: idea_sha}:
+    fail("non-release bookmarks must match the inspected migration receipt")
 if idea_tag in actual_tags:
-    if git("rev-parse", f"refs/tags/{idea_tag}") != "441b05ce0990b7c381789bafe10fb6e5a643aecf":
+    if git("rev-parse", f"refs/tags/{idea_tag}") != idea_sha:
         fail("idea/pr-39 differs from the inspected migration bookmark")
     actual_tags.remove(idea_tag)
 local_receipts = set(source["localNonReleaseTags"])

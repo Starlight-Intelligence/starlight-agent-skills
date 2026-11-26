@@ -18,6 +18,8 @@ Turn a product claim into a bounded, secure, observable and maintainable softwar
 
 ## Inputs
 
+For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
+
 - Product manifest, repository instructions, exact base revision and accepted architecture decisions.
 - Software Studio task envelope with scope, non-goals, token/cost ceilings, permissions, target channels, acceptance, rollout and stop conditions.
 - Threat context, data/identity/tool contracts, supported-version matrix and existing runtime evidence.
