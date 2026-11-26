@@ -18,6 +18,8 @@ Create distinctive media with durable editable masters, controlled generation sp
 
 ## Inputs
 
+For customer-facing interfaces, editorial or media, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) before production. Carry its revision and the owning product’s source decisions into the studio receipt.
+
 - Product manifest, Media Studio task envelope, creative brief and exact source revision.
 - Pinned brand/design pack, approved reference registry, asset IDs, rights/consent/split records, external credit ceiling and target channels.
 - Prior masters, continuity rules, release metadata and known restrictions.
