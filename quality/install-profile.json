@@ -1,0 +1,11 @@
+{
+  "sourceRoot": "skills/coding",
+  "skills": [
+    "site-qa-receipt",
+    "waitlist-door-check"
+  ],
+  "targets": [
+    "codex",
+    "claude-code"
+  ]
+}
