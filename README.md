@@ -43,6 +43,13 @@
 
 ---
 
+## Start with a working example
+
+Use the [developer showcase](docs/developer-showcase.md) to run a local support
+agent, compile a portable skill with a verified file receipt, or retrieve an
+editable three-shot directing recipe. It includes five skill installs and the
+source, license and execution limits for each example.
+
 ## What's inside
 
 **42 skills across 8 domains**, each a self-contained, rich-portable package.

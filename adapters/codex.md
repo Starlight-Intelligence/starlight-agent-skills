@@ -1,19 +1,18 @@
-# Codex (OpenAI)
+# Codex
 
-Codex has no native skill loader. Two supported paths:
+Install one skill in a workspace. Run these commands from a project that contains
+a clone of this repository named `starlight-agent-skills`.
 
-## 1. Paste into `AGENTS.md`
+```sh
+mkdir -p .agents/skills
+cp -R starlight-agent-skills/skills/research/claim-verification .agents/skills/
+```
 
-Copy the body of `SKILL.md` (drop the YAML frontmatter) into the project's
-`AGENTS.md` under a heading, so Codex picks it up as standing instructions.
+Open Codex from the project root and select the skill through `/skills`, or
+mention `$claim-verification` in a prompt. Keep the entire skill directory so
+the instructions can reach its examples and supporting files. For more locations
+and discovery behavior see [Codex skill documentation](https://developers.openai.com/codex/skills).
 
-## 2. Wrap as MCP
-
-If the skill declares `mcp_dependencies` in `manifest.json`, run it behind an MCP
-server and register that server in Codex's config. The skill body becomes the
-tool's instruction set.
-
-## Notes
-
-- Keep the `manifest.json` `inputs`/`outputs` as the tool schema when wrapping.
-- The "Built on SIP" footer should remain in any artifact the skill generates.
+Skill installation gives Codex instructions. Any separately required MCP server
+or browser tool still needs its own configuration and permissions. Check the
+specific skill's requirements before executing a task.

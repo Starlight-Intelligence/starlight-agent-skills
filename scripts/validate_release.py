@@ -83,13 +83,19 @@ if source["semanticTags"] != [] or source["remoteTags"] != [] or source["githubR
 if len(source["localNonReleaseTags"]) != 4:
     fail("exactly four local-only recovery/archive tags are expected")
 actual_tags = set(git("tag", "--list").splitlines())
-# The remote itself carries non-release refs (for example the exported `idea/pr-39` tag), so a
-# fresh clone never has an empty tag set. The ledger names them; subtract them before comparing,
-# otherwise this check only passes in the one checkout that happens to lack them.
-actual_tags -= set(ledger.get("observedNonReleaseRefs", {}))
+# The August ledger describes that audit date. The migrated repository also
+# carries a reviewed, non-release idea bookmark. Check its object exactly.
+idea_tag = "idea/pr-39"
+idea_sha = "441b05ce0990b7c381789bafe10fb6e5a643aecf"
+if ledger.get("observedNonReleaseRefs") != {idea_tag: idea_sha}:
+    fail("non-release bookmarks must match the inspected migration receipt")
+if idea_tag in actual_tags:
+    if git("rev-parse", f"refs/tags/{idea_tag}") != idea_sha:
+        fail("idea/pr-39 differs from the inspected migration bookmark")
+    actual_tags.remove(idea_tag)
 local_receipts = set(source["localNonReleaseTags"])
 if actual_tags not in (set(), local_receipts):
-    fail("checkout tags must be either the empty remote topology or all four local receipts")
+    fail("unexpected checkout tags outside the audited recovery and migration receipts")
 
 try:
     git("cat-file", "-e", f"{release['targetSha']}^{{commit}}")
