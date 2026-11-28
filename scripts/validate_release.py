@@ -83,6 +83,10 @@ if source["semanticTags"] != [] or source["remoteTags"] != [] or source["githubR
 if len(source["localNonReleaseTags"]) != 4:
     fail("exactly four local-only recovery/archive tags are expected")
 actual_tags = set(git("tag", "--list").splitlines())
+# The remote itself carries non-release refs (for example the exported `idea/pr-39` tag), so a
+# fresh clone never has an empty tag set. The ledger names them; subtract them before comparing,
+# otherwise this check only passes in the one checkout that happens to lack them.
+actual_tags -= set(ledger.get("observedNonReleaseRefs", {}))
 local_receipts = set(source["localNonReleaseTags"])
 if actual_tags not in (set(), local_receipts):
     fail("checkout tags must be either the empty remote topology or all four local receipts")
