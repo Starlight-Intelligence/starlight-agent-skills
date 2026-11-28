@@ -1,0 +1,30 @@
+name: Capability registry checks
+on:
+  pull_request:
+    paths:
+      - 'scripts/capability_registry.py'
+      - 'scripts/import_mcp_registry.py'
+      - 'tests/test_capability_registry.py'
+      - 'tests/test_import_mcp_registry.py'
+      - '.github/workflows/capability-registry.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/capability_registry.py'
+      - 'scripts/import_mcp_registry.py'
+      - 'tests/test_capability_registry.py'
+      - 'tests/test_import_mcp_registry.py'
+      - '.github/workflows/capability-registry.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Registry unit tests
+        run: python3 -m unittest discover -s tests -p 'test_*registry.py' -v

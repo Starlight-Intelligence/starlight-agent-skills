@@ -51,5 +51,21 @@ jobs:
       - name: Validate Codex plugin package
         run: python3 scripts/validate_plugin.py
 
+      - name: Diagnose release tag topology
+        run: |
+          python3 - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          ledger = json.loads(Path("docs/releases/release-ledger.json").read_text())
+          actual = sorted(subprocess.check_output(["git", "tag", "--list"], text=True).splitlines())
+          expected = sorted(ledger["source"]["localNonReleaseTags"])
+          print("Fetched tag count:", len(actual))
+          print("Expected local-only recovery tag count:", len(expected))
+          print("Unexpected fetched tags:", json.dumps(sorted(set(actual) - set(expected))))
+          print("Missing historical local tags:", json.dumps(sorted(set(expected) - set(actual))))
+          print("Remote policy recorded:", ledger["source"]["tagBoundaryPolicy"])
+          PY
+
       - name: Validate release truth
         run: python3 scripts/validate_release.py
